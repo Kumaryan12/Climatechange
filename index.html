@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Awareness</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar Styles */
+        nav {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://www.un.org/sustainabledevelopment/wp-content/uploads/2018/09/Climate-Action-1500x1000.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgb(11, 159, 43);
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .hero a:hover {
+            background-color: #16a085;
+        }
+
+        .hero {
+    background: url('https://plus.unsplash.com/premium_photo-1678366758867-49ba633ba74e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+
+       
+
+        /* Features Section */
+        .features {
+            padding: 60px 20px;
+            background-color: #ecf0f1;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        .feature-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .feature img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            color: #1abc9c;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Stories Section */
+        .stories {
+            background-color: #f4f4f4;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .stories h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        .story-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .story {
+            background-color: white;
+            border-radius: 10px;
+            width: 300px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: left;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .story img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .story h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .story p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .story:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #1abc9c;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #16a085;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .feature-cards,
+            .story-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature,
+            .story {
+                width: 90%;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="renewable.html">Renewable Energy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="action.html">Actionable Steps</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carbonfootprint.html">Carbon Footprint Calculator</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About Climate Change</a></li>
+                    <li class="nav-item"><a class="nav-link" href="goa.html">Goa</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Take Action Against Climate Change</h1>
+        <p>Learn more about how you can make a difference to save our planet.</p>
+        <li class="nav-item"><a class="nav-link" href="carbonfootprint.html">Calculate carbon footprint.</a></li>
+
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Take Action?</h2>
+        <div class="feature-cards">
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/3817/3817835.png" alt="Reduce">
+                <h3>Reduce Emissions</h3>
+                <p>Lowering your carbon emissions can have a major impact on reducing the effects of climate change.</p>
+            </div>
+
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/167/167707.png" alt="Recycle">
+                <h3>Recycle & Reuse</h3>
+                <p>Recycling materials reduces waste and supports sustainable resource management.</p>
+            </div>
+
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046760.png" alt="Conserve">
+                <h3>Conserve Energy</h3>
+                <p>Using energy more efficiently is an easy way to help fight climate change.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="stories">
+        <h2>Success Stories</h2>
+        <div class="story-cards">
+            <div class="story">
+                <img src="https://images.unsplash.com/photo-1509099836639-18ba88fb0c09" alt="Story 1">
+                <h3>Green Energy Initiative in Goa</h3>
+                <p>Goa has implemented solar energy systems in multiple areas, reducing the carbon footprint by 20%.</p>
+            </div>
+
+            <div class="story">
+                <img src="https://images.unsplash.com/photo-1581091012184-1de873bd6e91" alt="Story 2">
+                <h3>Community Waste Management</h3>
+                <p>A small community in North Goa has developed an efficient recycling and composting program.</p>
+            </div>
+
+            <div class="story">
+                <img src="https://images.unsplash.com/photo-1473663065522-33361623fa27" alt="Story 3">
+                <h3>Water Conservation</h3>
+                <p>Efforts to conserve water in coastal areas have improved local ecosystems and reduced water waste.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Climate Change Awareness. All rights reserved.</p>
+        <p>Powered by <a href="#">Goa Renewable Energy Program</a></p>
+    </footer>
+
+</body>
+
+</html>
+
+
